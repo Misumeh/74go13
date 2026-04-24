@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Pack | 74GO13 Archive</title>
+    
+    <meta name="description" content="Download 74go13 anime texture packs ported by Misumeh for Minecraft Java and Bedrock.">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Anime Texture Pack",
+      "operatingSystem": "Minecraft (Java/Bedrock)",
+      "applicationCategory": "GameApplication",
+      "author": {
+        "@type": "Person",
+        "name": "74go13"
+      },
+      "contributor": {
+        "@type": "Person",
+        "name": "Misumeh"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="detail-page">
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">74GO<span>13</span></a>
+            <nav><a href="index.html" class="back-link">← Return to Archive</a></nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="pack-content"></div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const packId = new URLSearchParams(window.location.search).get('id');
+            if (packId) {
+                fetchPacks().then(data => {
+                    renderPackDetails(data, packId);
+                    // Dynamically update page title for SEO
+                    const pack = data.find(p => p.id === packId);
+                    if(pack) document.title = `${pack.name} Texture Pack | 74go13 Archive`;
+                });
+            }
+        });
+    </script>
+</body>
+</html>

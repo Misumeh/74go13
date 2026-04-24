@@ -1,0 +1,224 @@
+[
+    {
+        "id": "asuna",
+        "name": "Asuna",
+        "type": "sfw",
+        "images": {
+            "main": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhWPOHi8iDO7by4wINH4_KYRMby-lp3wnhbn62IADfBUqUjTw1VJvh-xAxO67FfXptovl2bHfzuIa2DVRSuw5duL-QRMs91IEBYXWMZsWAogYQtVn4vzav4epKzC_lkoZfQZFWxrF3Hfoxerk0SHWKa3DYnvhWqu9MQCeP2qixY3zTER0Gfli3WV-8/s1024/Thumbnail%20(Sky).png",
+            "inventory": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAybDDswJyEczbFt1-sPax_Z_ExCxYh68Obmf_tivrhtalKomqyRjwNSaZntShgfbb1t8nMK9jf9McTqtRKXGkXM8cJyEi3JQwXCFA_5kjBbG88xWjwe-S16eXfBA-vtYLZAAC3ZZMzkQGFW9TQQIR_FVRv9mnsCo160pfVv15RSA1irKSw_l0Hx5d/s1024/Thumbnail%20(Animated%20Inventory).png"
+        },
+        "downloads": {
+            "java_legacy": "https://www.mediafire.com/file/0pccc67exzieqkx/Asuna_%2528Java_Edition%2529_%25281.8%2529.zip/file",
+            "java_modern": "https://www.mediafire.com/file/tdp0sm463obi9tl/Asuna_%2528Java_Edition%2529_%252826.1%2529.zip/file",
+            "bedrock": "https://www.mediafire.com/file/4wrw7681xwrmf32/Asuna_%2528Bedrock_Edition%2529.mcpack/file"
+        }
+    },
+    {
+        "id": "ellen-joe",
+        "name": "Ellen Joe",
+        "type": "sfw",
+        "images": {
+            "main": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEih7twvHPDymhdiZC7zVx54oS23d5T0fowLRNC-n3sWu-agRRxPYeofLx9LJ2N9Qn5r_6bOQaIw9LQ2yIKzLTO-bZEuEyk8RK4-4D9dQ69G8YTkOUqGwVGs6I6U1jlrBXkkbO5DuOgtDvRVjAiSah5iQaiXUfGulEnblUrVjlNghCHzkPw7_35MGmIF/s1024/Thumbnail%20(Sky).png",
+            "inventory": null
+        },
+        "downloads": {
+            "java_legacy": "https://www.mediafire.com/file/iueeexngc22prvx/Ellen_Joe_%2528Java_Edition%2529_%25281.8%2529.zip/file",
+            "java_modern": "https://www.mediafire.com/file/3r6vadt3qi88iln/Ellen_Joe_%2528Java_Edition%2529_%252826.1%2529.zip/file",
+            "bedrock": "https://www.mediafire.com/file/x2mji1f62tbn145/Ellen_Joe_%2528Bedrock_Edition%2529.mcpack/file"
+        }
+    },
+    {
+        "id": "fenrys",
+        "name": "Fenrys",
+        "type": "sfw",
+        "images": {
+            "main": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgcPx4gez_y5aZFD4mVFxdgZtKv3Si0bNcX9FVzmfrBiR0zRjJHVTck58mMrkH8XQP884EvY9LXEOe81J5FIsyHwHhHpVEcAsfqvN6m3UoYRgXDQ5JaZPY6MrZgaRdhC02gD6f75FypvW6sNxNun02EScHLYwFR2zqyIXCllcwFuqjvf0hqcPZ0gD_e/s1024/Thumbnail%20(Sky).png",
+            "inventory": null
+        },
+        "downloads": {
+            "java_legacy": "https://www.mediafire.com/file/fbieepc29wa16l5/Fenrys_%2528Java_Edition%2529_%25281.8%2529.zip/file",
+            "java_modern": "https://www.mediafire.com/file/7435tv6p87fivqf/Fenrys_%2528Java_Edition%2529_%252826.1%2529.zip/file",
+            "bedrock": "https://www.mediafire.com/file/fxdfvom8mokwlm8/Fenrys_%2528Bedrock_Edition%2529.mcpack/file"
+        }
+    },
+    {
+        "id": "frieren",
+        "name": "Frieren",
+        "type": "sfw",
+        "images": {
+            "main": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKeRC11ju4Fo1kSQsTTMudflozpMAhKU1oCFn2wOmJgbVk4uDQ2CEVBJ88oNLbdwUCqslGx4ptnPWTxEBT3juKwNdj6sOfeOQobUbsm6mgcnZsiFCsSjL8lA-ToPd3c8TSUuY1GrFpN6a_rzXg76jxoZaQ0l_3ylratJTl_tu2NjQF2psa76DmDufz/s1024/Thumbnail%20(Sky).png",
+            "inventory": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg0VIMxQmqfbT4O_ub9CYqMlyxjVYjaIfpFrzYI8C-S1gj4AHo-y-YlnpwJ_O9MuQ09rWuvLOVkHynkz34nzvnpSlUzNyIZ6JOmZiVRvVwgcwL2NpSqyYzm51TB2hL5noNa7jDi-j4qaUygeKyPEcx_HxHgWZx5DWwF9xFrMLwVk5q6whXR-g1S1yT/s1024/Thumbnail%20(Inventory).png"
+        },
+        "downloads": {
+            "java_legacy": "https://www.mediafire.com/file/ehl530gzwy19lht/Frieren_%2528Java_Edition%2529_%25281.8%2529.zip/file",
+            "java_modern": "https://www.mediafire.com/file/p48s5ao7n8plt7e/Frieren_%2528Java_Edition%2529_%252826.1%2529.zip/file",
+            "bedrock": "https://www.mediafire.com/file/0j6w48wnjhtuz0y/Frieren_%2528Bedrock_Edition%2529.mcpack/file"
+        }
+    },
+    {
+        "id": "giselle",
+        "name": "Giselle Gewelle",
+        "type": "sfw",
+        "images": {
+            "main": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHI2JPiWWAt7WILbNZ1SLu-PwieCXDTD0R8amk68MHDPTU7slP8kOmvAo_kklTPg6DIGcgwKHgiAR73vm4HdPfbqEJD05WXj2KSrbOLNFZpP3tT00nZiOWxIcAQ3GviFPPjc0uCogy61LmcpArxqGR1p-5AjlRXkLP9G2e30LX9U3qIIVjx3R4YWBk/s1024/Thumbnail%20(Sky).png",
+            "inventory": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguaI0uWj3I_-bODTDlrIvvo4kxRcxukg4_IclKB443sphclV0UMn5Hr1h-AenwmBStNaLzeCpW-ItXvv-haWhKUf3AsoBhg5xHdW0cVsYqxAMjxiDCEmC9hEYIw7WJgdL6v_EIeLC2-YOy10HL94Gy7MTMwU5cXy8wmQYKSl0pJ_rhUzovqG7AAybh/s1024/Thumbnail%20(Animated%20Inventory).png"
+        },
+        "downloads": {
+            "java_legacy": "https://www.mediafire.com/file/mnslqiwqfamfjvm/Giselle_Gewelle_%2528Java_Edition%2529_%25281.8%2529.zip/file",
+            "java_modern": "https://www.mediafire.com/file/0k8emtmwmb1v95a/Giselle_Gewelle_%2528Java_Edition%2529_%252826.1%2529.zip/file",
+            "bedrock": "https://www.mediafire.com/file/munc6ntibyft5ly/Giselle_Gewelle_%2528Bedrock_Edition%2529.mcpack/file"
+        }
+    },
+    {
+        "id": "toga",
+        "name": "Himiko Toga",
+        "type": "sfw",
+        "images": {
+            "main": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_RWDG7o3LlPk8BxsVZi0515IMNhppPS5pRjo8tJKIqBc5wn5GRCcz004_jgqQWGtK2KhcjJtkj38aMwix7whv9PHx-zo17vn9zMuYK1WEaQr7tTGvxvpzDgyCWRSzHKv_8CH56hDPWt8_uGOtWhqzJ9JpT9lsHQVDr60caAIVheWchY03qQAlo-m3/s1024/Thumbnail%20(Sky).png",
+            "inventory": null
+        },
+        "downloads": {
+            "java_legacy": "https://www.mediafire.com/file/1vr1ahoqz9wulua/Himiko_Toga_%2528Java_Edition%2529_%25281.8%2529.zip/file",
+            "java_modern": "https://www.mediafire.com/file/savslsci8uki34c/Himiko_Toga_%2528Java_Edition%2529_%252826.1%2529.zip/file",
+            "bedrock": "https://www.mediafire.com/file/h25meoi97eo9iyc/Himiko_Toga_%2528Bedrock_Edition%2529.mcpack/file"
+        }
+    },
+    {
+        "id": "mikasa",
+        "name": "Mikasa",
+        "type": "sfw",
+        "images": {
+            "main": "http://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgYtChLdtOCY0k7VSYJUaKiF5DJ9jhylQbYDVwQ_nIYZAcL6Q9rKKy0yRheBcw51qcYbhUABdItkMaFnOmSlnvuE-Xlzhz-lt_S0awn8PjDxXiFZj-u_4jR1BzEsOgjhxjoDGAH_qQh8MsEFoRE9NETVYZxR9uhU3eSEltH3MhmP5EWAZvfJZa0-lj/s1024/Thumbnail%20(Sky).png",
+            "inventory": null
+        },
+        "downloads": {
+            "java_legacy": "https://www.mediafire.com/file/3g4yzw8dsnaqisi/Mikasa_%2528Java_Edition%2529_%25281.8%2529.zip/file",
+            "java_modern": "https://www.mediafire.com/file/xn9o5c9irj8ngkt/Mikasa_%2528Java_Edition%2529_%252826.1%2529.zip/file",
+            "bedrock": "https://www.mediafire.com/file/o8vuv2oi9f1472f/Mikasa_%2528Bedrock_Edition%2529.mcpack/file"
+        }
+    },
+    {
+        "id": "miku",
+        "name": "Miku",
+        "type": "sfw",
+        "images": {
+            "main": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw_0qZKGkobODOXYcTvSn06hIkQ07duhDBgAyfcRkgNU3LcTOiGv5nMeh7bCUn05_KZxQ31jjWsDvslE7_VCZxzoSPfi0p-aA_ul-RHS7PQIpZPDhxk2ciSvAPzsl5DjFdDZsOBOpFwdv5itgcaf3yydcIkpB9msf8XX-w4GMQ957pLDdkLkIEx_Uv/s1024/Thumbnail%20(Sky).png",
+            "inventory": null
+        },
+        "downloads": {
+            "java_legacy": "https://www.mediafire.com/file/2q1zde8xo1nvlqq/Miku_%2528Java_Edition%2529_%25281.8%2529.zip/file",
+            "java_modern": "https://www.mediafire.com/file/owd5rbvs6fur9th/Miku_%2528Java_Edition%2529_%252826.1%2529.zip/file",
+            "bedrock": "https://www.mediafire.com/file/3lb7wbnxl5kbfxl/Miku_%2528Bedrock_Edition%2529.mcpack/file"
+        }
+    },
+    {
+        "id": "rei",
+        "name": "Rei Ayanami",
+        "type": "sfw",
+        "images": {
+            "main": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQy6JYb2653QMMS8L57XDPY_ACpVwCxyAxsFeTAoz-NT936COMUf-fpPf7ocHZhfhenlZ-5VKQoj03Eno_ol93U1wG5E7fLhfU1nAcS9t5ngJdzxdWbZpZvZ_bzzWl-cYgzx59uFiLH0b-ITbTSn1Zs1Ct9PKTJQLQA3-MESoJlmMxXRyRaOqMkaB-/s1024/Thumbnail%20(Sky).png",
+            "inventory": null
+        },
+        "downloads": {
+            "java_legacy": "https://www.mediafire.com/file/6wyxl70bgulig6z/Rei_Ayanami_%2528Java_Edition%2529_%25281.8%2529.zip/file",
+            "java_modern": "https://www.mediafire.com/file/cca49xve432kgcv/Rei_Ayanami_%2528Java_Edition%2529_%252826.1%2529.zip/file",
+            "bedrock": "https://www.mediafire.com/file/q8ivly8ljobn308/Rei_Ayanami_%2528Bedrock_Edition%2529.mcpack/file"
+        }
+    },
+    {
+        "id": "rias",
+        "name": "Rias Gremory",
+        "type": "sfw",
+        "images": {
+            "main": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaxORQImVGrI_wXQKCwKYjbVE5ZrTWh7so5GznYbXWOgJf4Rh6BlzO_vkRt19nc-qfl-BL9qMR7mdv_F8QHGwOX7wGuuf79NIeD_rysGOP-tCQoIxLb9TqCxfGtjMRHtZAF8CxxcDr5OzAqxiJvMr1JGUewlOp2Op6myn6vXjNwXuV5yRtdmVWrRLR/s1024/Thumbnail%20(Sky).png",
+            "inventory": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgrWfG9187O-UTZLvUqmmR5oBlHx234F_TFAxI5MF4-GpGeO4JnovCtEb9rKsMOoiULE-O6rNwhQjCnFKRJo4pYq_NmhfZzXbit135hiQiVWveMPh_BZuMW4l3g9Jcev4qDLTwLZlH_8U8zDWsflcu0VUddhSzdvnioD5eBOH1Qd_c1qxKaKww_PpG/s1024/Thumbnail%20(Inventory).png"
+        },
+        "downloads": {
+            "java_legacy": "https://www.mediafire.com/file/k7fdfd3z7v4rbsi/Rias_Gremory_%2528Java_Edition%2529_%25281.8%2529.zip/file",
+            "java_modern": "https://www.mediafire.com/file/nsx2j5q7uzv7y8s/Rias_Gremory_%2528Java_Edition%2529_%252826.1%2529.zip/file",
+            "bedrock": "https://www.mediafire.com/file/n9yeyc70yncev5b/Rias_Gremory_%2528Bedrock_Edition%2529.mcpack/file"
+        }
+    },
+    {
+        "id": "roxy",
+        "name": "Roxy Migurdia",
+        "type": "sfw",
+        "images": {
+            "main": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj56HvJv24dnC156H4bVxjuVKAArih6mvslwyQm7Snp8URn1UkCYrxPjlntmat8JbaxivBoxhsCkgx7QBQ4gesfot63-o9O9-Mbz5-DTku5GG2pJIRd3jpR2Y2bKKvmgRy1MabhZ0iS5nwF7KaLU0G94RbcwkfynKSvOVcRTSi6oVzQ8Rg2LTMKgsKO/s1024/Thumbnail%20(Sky).png",
+            "inventory": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9r6A7hva7sElDylVFMLvFoFsYK2bY-4wdpkXLKLfu7aGAIOJkuv1cqriKbfK0AyB_UfoVxzCcPEin8AYpjVQKd46vGb5vVeLZxDQe4kiFZQfYcimZNb2CplMeZ7ZG_BrB1mUc3xLvdeMEnYSv3A8vPs4dLJQzxmaPON3qUkx9BhdooOKblBH8K2g3/s1024/Thumbnail%20(Inventory).png"
+        },
+        "downloads": {
+            "java_legacy": "https://www.mediafire.com/file/gznls65ypynhxti/Roxy_Migurdia_%2528Java_Edition%2529_%25281.8%2529.zip/file",
+            "java_modern": "https://www.mediafire.com/file/czelmhknc2mqwv2/Roxy_Migurdia_%2528Java_Edition%2529_%252826.1%2529.zip/file",
+            "bedrock": "https://www.mediafire.com/file/fhvo8068v1lizk3/Roxy_Migurdia_%2528Bedrock_Edition%2529.mcpack/file"
+        }
+    },
+    {
+        "id": "shiro",
+        "name": "Shiro",
+        "type": "sfw",
+        "images": {
+            "main": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzgbGnm0r1auF4OePuLBFfehdk8F4O1Rutv3q4OF2MJzQ_vIonV-1KmUwIW-oB134UEhQ5LuEBGg2DBzH2_6Hc9PNMdiKByc5qROiTZ_VMW-jGe84beOgPqjzAL44Z6JU3ZdTJ47YVixNvvOakIlCoaQL-rl0gj5z8J1XmySUP3eQOnPYpNAqiE9kv/s1024/Thumbnail%20(Sky).png",
+            "inventory": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjW3AV4LNNyOkCSdq_oDIDNlp9rXzEsV-X-wJQ4yt_uxsmhKai8MhT-QsQoCHdZq0ZwBCgi81J9z2Bcotfk5GpNr3ZK7mMM_pRXxlgAjM_6BClIPX3iyxCMcr-GlU0qXL_UrZPrsp8woXe0TWDcDMcyhr7F6bZw2166Tn9iaDdtuy6cGw0F5sCcv5AP/s1024/Thumbnail%20(Inventory).png"
+        },
+        "downloads": {
+            "java_legacy": "https://www.mediafire.com/file/b0fv64631qasym0/Shiro_%2528Java_Edition%2529_%25281.8%2529.zip/file",
+            "java_modern": "https://www.mediafire.com/file/yhyg6x2u8flhrv9/Shiro_%2528Java_Edition%2529_%252826.1%2529.zip/file",
+            "bedrock": "https://www.mediafire.com/file/v9bgndid2j6pv3v/Shiro_%2528Bedrock_Edition%2529.mcpack/file"
+        }
+    },
+    {
+        "id": "tamaki",
+        "name": "Tamaki Kotatsu",
+        "type": "sfw",
+        "images": {
+            "main": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir8dxJlr3q2gwxbBisjRj0jADZUKNFk8eDir47UX7An8T6Jf3Prxqc0CV-5cwI7QjF6A0BiRakLzHymDbXbJzZNtCpXGz4wEKk6Cz_n_FP3LO7_kaR3ylVn24ztBFfiHaXay0BiMOOe-XJmylPo67yQfFvwdzzytF2HxqeuI_idF1lHapijkYHGV-B/s1024/Thumbnail%20(Sky).png",
+            "inventory": null
+        },
+        "downloads": {
+            "java_legacy": "https://www.mediafire.com/file/q5cbgk80j3pv75r/Tamaki_Kotatsu_%2528Java_Edition%2529_%25281.8%2529.zip/file",
+            "java_modern": "https://www.mediafire.com/file/4saxl8zpnv71r0x/Tamaki_Kotatsu_%2528Java_Edition%2529_%252826.1%2529.zip/file",
+            "bedrock": "https://www.mediafire.com/file/k1r4f3o907ip4oe/Tamaki_Kotatsu_%2528Bedrock_Edition%2529.mcpack/file"
+        }
+    },
+    {
+        "id": "akeno",
+        "name": "Akeno",
+        "type": "nsfw",
+        "images": {
+            "main": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkJzuG5BNw7TcmzwnhweW57gpkTIoJRKobPCDNet512yYyEB7-YSQTGzbxQYG9eoYvql1vTvzKFQHtydzKVY_nZgg57C8-yRo7OVgJtfNdo2q96pCSGqeaUpEqwKQgzJgs-12PTumZTih14zZXZbj46eyr2PUwtpsuQP3RZtLVkeDpHC6HkjKs7un_/s1024/Thumbnail%20(Sky)%20(3).png",
+            "inventory": null
+        },
+        "patreon_link": "https://www.patreon.com/posts/74go13s-nsfw-156412543"
+    },
+    {
+        "id": "maki",
+        "name": "Maki Zenin",
+        "type": "nsfw",
+        "images": {
+            "main": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicdW1ptGgMQUjJasQx0cjIVd1msdityjE-HBT9vpy2CNbYw3OZsizc1_N9CcOfbh-2iTrX6ZjK5uS-lIL4SFTP4o11BM35vG6IUyRztzhh_AOcg95Rm49ki3Yh2LM49NiqYx7A0-I69cHvPik2jB48jFkohWPQ6veWIkixAxHljGd_ta2yLQ3eFLE0/s1024/Thumbnail%20(Sky)%20(2).png",
+            "inventory": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRepUD7_ay8k7LSExHjHxMQCkZOenn2RApO7jRTWCxuF4OH01Rh_zOheAazDgedF1kYFDZBV1J81_9IX9XL7YMQxH3DQFA63OyzA6U30ru2Jjtpamb1YmpSX3b-29fikZbpEto59HKR12iJ88-gNltASI22PUCpWDDf4AJMKcLo9xMK_3VZajGmcn9/s1024/Thumbnail%20(Inventory(.png"
+        },
+        "patreon_link": "https://www.patreon.com/posts/74go13s-nsfw-156412543"
+    },
+    {
+        "id": "yoruichi-v1",
+        "name": "Yoruichi (V1)",
+        "type": "nsfw",
+        "images": {
+            "main": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5X6H6S18oehJfonF3fjxjZ2N2F0YmM8Jfo7xanHVSsyIrQmPeBG8t3rKf9Rft5Q9C7L_EQv36pBrcC0ITIeVS8xNqQah8uIxMPKqiHrurJGPapSmo8w3QG-HbNIknVYzepoPGkkCGKzdSjs0M9djp1CRgLa8GY2Zzk1ppCBXrBkduInrTvAefFUY3/s1024/Thumbnail%20(Sky)%20(4).png",
+            "inventory": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjtqWfsLEXyAyIyNPan38z6s6WpnNTZAETI2vCu62zoDvQ7EMAEUKcRDi8MmsQwuOSTB4c4-sS68PoA-9foBRupfauTvlLUShw1zlgNlv_OHX5DA_Lk6PPIlkkexfoRqTM0ydbMYoHnOqgdsP5xld_NjzVdwLYBo6nRhzGrQbCiTGTkD6yNy_ciShw-/s1024/Thumbnail%20(Inventory).png"
+        },
+        "patreon_link": "https://www.patreon.com/posts/74go13s-nsfw-156412543"
+    },
+    {
+        "id": "yoruichi-v2",
+        "name": "Yoruichi (V2)",
+        "type": "nsfw",
+        "images": {
+            "main": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj5X6H6S18oehJfonF3fjxjZ2N2F0YmM8Jfo7xanHVSsyIrQmPeBG8t3rKf9Rft5Q9C7L_EQv36pBrcC0ITIeVS8xNqQah8uIxMPKqiHrurJGPapSmo8w3QG-HbNIknVYzepoPGkkCGKzdSjs0M9djp1CRgLa8GY2Zzk1ppCBXrBkduInrTvAefFUY3/s1024/Thumbnail%20(Sky)%20(4).png",
+            "inventory": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhP9Q5sfQ4phU6hgvJlmcRyRz2p9uHZLFmdCnavTQqwnSae7-DpruYYXpjSMJ3nGOsEtIwh7U0IS75wxLoCfm0Tx6YDxWZIALguCYhGM4Kh6xNxsIm0fopZQTvUmjDRbiZTQTSHqe6Yw6Aqvf3tX7ZotoAN03JQbTQsv7nmchikJVlOEWI0ZyDRV3WE/s1024/Thumbnail%20(Inventory)%20(1).png"
+        },
+        "patreon_link": "https://www.patreon.com/posts/74go13s-nsfw-156412543"
+    }
+]

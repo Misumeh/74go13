@@ -1,123 +1,89 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const grid = document.getElementById('packs-grid');
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    let allPacks = [];
-
-    async function loadArchive() {
-        try {
-            const response = await fetch('data.json');
-            allPacks = await response.json();
-            renderPacks(allPacks);
-        } catch (error) {
-            console.error("Error loading JSON:", error);
-            grid.innerHTML = `<p style="grid-column: 1/-1; text-align: center;">Could not load archive. Make sure data.json is valid.</p>`;
-        }
+// Database Fetch
+async function fetchPacks() {
+    try {
+        const response = await fetch('packs.json');
+        return await response.json();
+    } catch (error) {
+        console.error("Error loading packs:", error);
+        return null;
     }
+}
 
-function renderPacks(packs) {
-    grid.innerHTML = '';
+// Render Gallery
+function renderIndex(packs) {
+    const sfwGrid = document.getElementById('sfw-grid');
+    const nsfwGrid = document.getElementById('nsfw-grid');
     
     packs.forEach(pack => {
-        const card = document.createElement('article');
-        card.className = 'pack-card fade-in';
-        
-        // 1. Generate Gallery Images and Dots
-        let galleryHTML = '';
-        let dotsHTML = '';
-        const hasMultipleImages = pack.gallery && pack.gallery.length > 1;
-
-        if (pack.gallery && pack.gallery.length > 0) {
-            pack.gallery.forEach((imgUrl, index) => {
-                galleryHTML += `<img src="${imgUrl}" class="gallery-img" alt="${pack.character} preview" loading="lazy">`;
-                if (hasMultipleImages) {
-                    dotsHTML += `<span class="dot ${index === 0 ? 'active' : ''}"></span>`;
-                }
-            });
-        }
-
-        // 2. Generate Download Buttons (The fix is here)
-        let downloadButtonsHTML = '';
-        if (pack.links) {
-            if (pack.links.legacy) {
-                downloadButtonsHTML += `
-                    <a href="${pack.links.legacy}" target="_blank" class="dl-link">
-                        <i class="fa-solid fa-code-branch"></i> Java Legacy 1.8
-                    </a>`;
-            }
-            if (pack.links.modern) {
-                downloadButtonsHTML += `
-                    <a href="${pack.links.modern}" target="_blank" class="dl-link">
-                        <i class="fa-solid fa-cube"></i> Java Modern 1.20+
-                    </a>`;
-            }
-            if (pack.links.bedrock) {
-                downloadButtonsHTML += `
-                    <a href="${pack.links.bedrock}" target="_blank" class="dl-link">
-                        <i class="fa-solid fa-mobile-screen"></i> Bedrock Edition
-                    </a>`;
-            }
-        }
-
-        // 3. Assemble the Card
+        const isNSFW = pack.type === 'nsfw';
+        const card = document.createElement('a');
+        card.href = `pack.html?id=${pack.id}`;
+        card.className = 'card';
         card.innerHTML = `
-            <div class="gallery-wrapper">
-                ${hasMultipleImages ? `
-                    <button class="nav-btn prev-btn" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
-                    <button class="nav-btn next-btn" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
-                    <div class="gallery-dots">${dotsHTML}</div>
-                ` : ''}
-                <div class="pack-gallery">
-                    ${galleryHTML}
-                </div>
+            <div class="card-img">
+                ${isNSFW ? '<span class="nsfw-tag">18+</span>' : ''}
+                <img src="${pack.images.main}" class="${isNSFW ? 'blur-nsfw' : ''}">
             </div>
-            <div class="pack-info">
-                <h3>${pack.character}</h3>
-                <div class="dl-group">
-                    ${downloadButtonsHTML}
-                </div>
-            </div>
+            <div class="card-info">${pack.name}</div>
         `;
-
-        // 4. Attach Navigation Logic for Multi-Image Packs
-        if (hasMultipleImages) {
-            const gallery = card.querySelector('.pack-gallery');
-            const dots = card.querySelectorAll('.dot');
-            
-            card.querySelector('.next-btn').onclick = () => {
-                gallery.scrollBy({ left: gallery.offsetWidth, behavior: 'smooth' });
-            };
-            
-            card.querySelector('.prev-btn').onclick = () => {
-                gallery.scrollBy({ left: -gallery.offsetWidth, behavior: 'smooth' });
-            };
-
-            // Sync dots with manual scroll/swipe
-            gallery.onscroll = () => {
-                const scrollIndex = Math.round(gallery.scrollLeft / gallery.offsetWidth);
-                dots.forEach((dot, i) => {
-                    dot.classList.toggle('active', i === scrollIndex);
-                });
-            };
-        }
-
-        grid.appendChild(card);
+        (isNSFW ? nsfwGrid : sfwGrid).appendChild(card);
     });
 }
 
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            filterBtns.forEach(b => b.classList.remove('active'));
-            e.target.classList.add('active');
+// Hero Slideshow
+function initHeroSlideshow(packs) {
+    const slider = document.getElementById('hero-bg-slider');
+    const images = packs.filter(p => p.type === 'sfw').map(p => p.images.main);
+    let i = 0;
+    if (images.length === 0) return;
+    const next = () => {
+        slider.style.backgroundImage = `url('${images[i]}')`;
+        i = (i + 1) % images.length;
+    };
+    next();
+    setInterval(next, 5000);
+}
 
-            const filter = e.target.dataset.filter;
-            if (filter === 'all') {
-                renderPacks(allPacks);
-            } else {
-                const filtered = allPacks.filter(p => p.versions.includes(filter));
-                renderPacks(filtered);
-            }
-        });
-    });
+// Render Details Page
+function renderPackDetails(packs, id) {
+    const pack = packs.find(p => p.id === id);
+    const container = document.getElementById('pack-content');
+    if (!pack) return;
 
-    loadArchive();
-});
+    const isNSFW = pack.type === 'nsfw';
+
+    container.innerHTML = `
+        <div class="pack-split">
+            <div class="dl-section">
+                <div>
+                    ${isNSFW ? '<span class="badge-tag" style="color:var(--nsfw)">Restricted Content</span>' : ''}
+                    <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.1;">${pack.name}</h1>
+                </div>
+
+                <div class="dl-card">
+                    <h3 style="margin-bottom: 1.5rem">Download Files</h3>
+                    ${isNSFW ? `
+                        <a href="${pack.patreon_link}" class="dl-btn patreon">Unlock via Patreon</a>
+                        <p style="font-size: 0.8rem; color: var(--text-dim); text-align: center;">This archive is preserved for Patreon supporters.</p>
+                    ` : `
+                        <a href="${pack.downloads.java_modern}" class="dl-btn">Java Edition (Modern)</a>
+                        <a href="${pack.downloads.java_legacy}" class="dl-btn">Java Edition (1.8)</a>
+                        <a href="${pack.downloads.bedrock}" class="dl-btn">Bedrock Edition</a>
+                    `}
+                </div>
+
+                <div class="install-guide">
+                    <h3 style="margin-bottom: 1.5rem">Installation</h3>
+                    <div class="step-item"><b>Step 01</b> Download the file matching your game version.</div>
+                    <div class="step-item"><b>Step 02</b> Place the .zip in your <i>resourcepacks</i> folder.</div>
+                    <div class="step-item"><b>Step 03</b> Enable the pack in your in-game settings.</div>
+                </div>
+            </div>
+
+            <div class="preview-col">
+                <img src="${pack.images.main}" class="${isNSFW ? 'blur-nsfw' : ''}">
+                ${pack.images.inventory ? `<img src="${pack.images.inventory}" title="Inventory View">` : ''}
+            </div>
+        </div>
+    `;
+}   

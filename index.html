@@ -3,86 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>74go13 Archive | Minecraft Anime Packs</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&display=swap" rel="stylesheet">
+    
+    <title>74go13 Anime Texture Archive | Preserved by Misumeh</title>
+    <meta name="title" content="74go13 Anime Texture Archive | Preserved by Misumeh">
+    <meta name="description" content="The official preservation archive of 74go13's legendary anime texture packs. Maintained, updated, and ported to Minecraft Bedrock & Modern Java by Misumeh.">
+    <meta name="keywords" content="74go13, Misumeh, anime texture packs, minecraft anime, asuna texture pack, frieren texture pack, bedrock anime texture, minecraft pvp packs">
+    <meta name="author" content="Misumeh">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/"> <meta property="og:title" content="74go13 Anime Texture Archive | Preserved by Misumeh">
+    <meta property="og:description" content="Download the legendary 74go13 anime texture packs. Fully ported for Bedrock and Modern Java by Misumeh. Free, ad-free, and archived forever.">
+    <meta property="og:image" content="https://yourdomain.com/social-preview.jpg"> <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/">
+    <meta property="twitter:title" content="74go13 Anime Texture Archive | Misumeh">
+    <meta property="twitter:description" content="The definitive collection of 74go13's Minecraft texture legacy. Preserved & ported by Misumeh.">
+    <meta property="twitter:image" content="https://yourdomain.com/social-preview.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "74go13 Anime Texture Archive",
+      "description": "Preservation of 74go13's anime texture packs for Minecraft.",
+      "publisher": {
+        "@type": "Person",
+        "name": "Misumeh"
+      },
+      "creator": {
+        "@type": "Person",
+        "name": "74go13"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Java Legacy Packs" },
+          { "@type": "ListItem", "position": 2, "name": "Java Modern Ports" },
+          { "@type": "ListItem", "position": 3, "name": "Bedrock Edition Ports" }
+        ]
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content fade-in">
-            <span class="badge"><i class="fa-solid fa-box-archive"></i> Official Archive</span>
-            <h1>74go13 <span>Packs</span></h1>
-            <p>High-quality anime texture packs for Java & Bedrock. Preserving the legacy of a master creator.</p>
-            <div class="hero-btns">
-                <a href="#catalogue" class="btn-primary">View Archive</a>
-                <a href="#install" class="btn-secondary">Installation Guide</a>
-            </div>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">74GO<span>13</span> <small style="font-size: 10px; opacity: 0.5; vertical-align: middle;">ARCHIVE BY MISUMEH</small></a>
+            <nav>
+                <a href="#sfw-section">SFW Packs</a>
+                <a href="#nsfw-section" class="nav-highlight">NSFW Packs</a>
+            </nav>
         </div>
     </header>
 
-    <main class="container" id="catalogue">
-        <div class="section-header fade-in">
-            <h2><i class="fa-solid fa-layer-group"></i> Archive Catalogue</h2>
-            <div class="filters" id="version-filters">
-                <button class="filter-btn active" data-filter="all">All Versions</button>
-                <button class="filter-btn" data-filter="legacy">Java Legacy (1.8)</button>
-                <button class="filter-btn" data-filter="modern">Java Modern (1.19+)</button>
-                <button class="filter-btn" data-filter="bedrock">Bedrock</button>
-            </div>
+    <section class="hero" id="hero-section">
+        <div class="hero-bg-slider" id="hero-bg-slider"></div>
+        <div class="hero-content">
+            <span class="badge-tag">A Misumeh Preservation Project</span>
+            <h2>The 74go13 Legacy</h2>
+            <p>Archiving the finest anime textures in Minecraft history. Ported for <strong>Modern Java</strong> and <strong>Bedrock Edition</strong>.</p>
         </div>
+    </section>
 
-        <div class="packs-grid" id="packs-grid">
+    <main class="container">
+        <section id="sfw-section" class="section">
+            <div class="section-header">
+                <h3>The Collection</h3>
+                <div class="header-line"></div>
             </div>
+            <div id="sfw-grid" class="grid"></div>
+        </section>
+
+        <section id="nsfw-section" class="section">
+            <div class="section-header">
+                <h3 class="nsfw-text">Mature Selection (18+)</h3>
+                <div class="header-line nsfw-line"></div>
+            </div>
+            <div id="nsfw-grid" class="grid"></div>
+        </section>
     </main>
 
-    <section class="guide-section" id="install">
-        <div class="container">
-            <h2><i class="fa-solid fa-terminal"></i> Installation Process</h2>
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-num">01</div>
-                    <h3>Download</h3>
-                    <p>Select your version (Legacy for 1.8.9, Modern for 1.20+ or Bedrock).</p>
-                </div>
-                <div class="step">
-                    <div class="step-num">02</div>
-                    <h3>Locate</h3>
-                    <p>Open Minecraft, go to Resource Packs and click 'Open Pack Folder'.</p>
-                </div>
-                <div class="step">
-                    <div class="step-num">03</div>
-                    <h3>Enjoy</h3>
-                    <p>Drag the .zip file, activate it in-game, and you're ready to go.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="discord-footer">
-        <div class="container">
-            <div class="discord-card slide-up">
-                <div class="discord-text">
-                    <h2>Join the Discord <i class="fa-brands fa-discord"></i></h2>
-                    <p>Be part of a community of 74go13 fans. Share your setups and get support.</p>
-                    <div class="nsfw-tag">
-                        <i class="fa-solid fa-triangle-exclamation"></i> <strong>NSFW Content:</strong> Adults only section available via age verification.
-                    </div>
-                </div>
-                <a href="https://discord.gg/eDZP3dEZeM" target="_blank" class="btn-discord">Join Now</a>
-            </div>
-        </div>
-    </section>
-
     <footer>
-        <div class="container">
-            <p>Archive maintained by Misumeh Network.</p>
-            <p class="copyright">Developed with <i class="fa-solid fa-heart"></i> for the community.</p>
-        </div>
+        <p>Originally created by <strong>74go13</strong>. Ported and Maintained by <strong>Misumeh</strong>.</p>
+        <p style="margin-top: 10px; font-size: 12px;">This archive is for educational and preservation purposes.</p>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchPacks().then(data => {
+                if(data) {
+                    renderIndex(data);
+                    initHeroSlideshow(data);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
