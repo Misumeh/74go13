@@ -13,6 +13,20 @@
             "bedrock": "https://www.mediafire.com/file/4wrw7681xwrmf32/Asuna_%2528Bedrock_Edition%2529.mcpack/file"
         }
     },
+        {
+        "id": "akeno-sfw",
+        "name": "Akeno",
+        "type": "sfw",
+        "images": {
+            "main": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWt-CT5T_fzUzU297ZTMlZ_pkgHuMrc4prSFvFiHmabu5DvipuRmiCOKuB1AuDcY3TZPMg9IE7ACx_zrwzQ76Uk2W7yFPogxyqd1Q9dJ43MZOKL7wuC0ax_jBtBa8kxO_B0L7FLGsGBBEfuF3ChsJmxwaJhDjnf7trTYbuGwQLOec_L6Yz-Mui72SQ/s1024/Thumbnail%20(Sky).png",
+            "inventory": null
+        },
+        "downloads": {
+            "java_legacy": "https://www.mediafire.com/file/06okzf2emv9vcso/Akeno_%2528Java_Edition%2529_%25281.8%2529.zip/file",
+            "java_modern": "https://www.mediafire.com/file/sw1a7coymtjchhb/Akeno_%2528Java_Edition%2529_%252826.1%2529.zip/file",
+            "bedrock": "https://www.mediafire.com/file/x1j5p3z705ncu5d/Akeno_%2528Bedrock_Edition%2529.mcpack/file"
+        }
+    },
     {
         "id": "ellen-joe",
         "name": "Ellen Joe",
