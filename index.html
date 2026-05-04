@@ -12,13 +12,13 @@
     <meta name="robots" content="index, follow">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourdomain.com/"> <meta property="og:title" content="74go13 Anime Texture Archive | Preserved by Misumeh">
+    <meta property="og:url" content="https://74go13.misumeh.com/"> <meta property="og:title" content="74go13 Anime Texture Archive | Preserved by Misumeh">
     <meta property="og:description" content="Download the legendary 74go13 anime texture packs. Fully ported for Bedrock and Modern Java by Misumeh. Free, ad-free, and archived forever.">
-    <meta property="og:image" content="https://yourdomain.com/social-preview.jpg"> <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://yourdomain.com/">
+    <meta property="og:image" content="https://74go13.misumeh.com/social-preview.jpg"> <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://74go13.misumeh.com/">
     <meta property="twitter:title" content="74go13 Anime Texture Archive | Misumeh">
     <meta property="twitter:description" content="The definitive collection of 74go13's Minecraft texture legacy. Preserved & ported by Misumeh.">
-    <meta property="twitter:image" content="https://yourdomain.com/social-preview.jpg">
+    <meta property="twitter:image" content="https://74go13.misumeh.com/assets/social-preview.png">
 
     <script type="application/ld+json">
     {
@@ -46,13 +46,17 @@
     </script>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <div class="header-container">
             <a href="index.html" class="logo">74GO<span>13</span> <small style="font-size: 10px; opacity: 0.5; vertical-align: middle;">ARCHIVE BY MISUMEH</small></a>
             <nav>
+                                <div class="search-wrapper">
+                    <input type="text" id="searchInput" placeholder="Find your next pack..." class="search-bar">
                 <a href="#sfw-section">SFW Packs</a>
                 <a href="#nsfw-section" class="nav-highlight">NSFW Packs</a>
             </nav>
@@ -65,13 +69,14 @@
             <span class="badge-tag">A Misumeh Preservation Project</span>
             <h2>The 74go13 Legacy</h2>
             <p>Archiving the finest anime textures in Minecraft history. Ported for <strong>Modern Java</strong> and <strong>Bedrock Edition</strong>.</p>
+             <a href="#sfw-section" class="home-btn"><i class="fa-solid fa-magnifying-glass margin-icon"></i>Explore Collection</a> 
         </div>
     </section>
 
     <main class="container">
         <section id="sfw-section" class="section">
             <div class="section-header">
-                <h3>The Collection</h3>
+                <h3>The Anime Packs Collections</h3>
                 <div class="header-line"></div>
             </div>
             <div id="sfw-grid" class="grid"></div>
@@ -96,8 +101,10 @@
         document.addEventListener('DOMContentLoaded', () => {
             fetchPacks().then(data => {
                 if(data) {
+                    allPacks = data;
                     renderIndex(data);
                     initHeroSlideshow(data);
+                    initSearch();
                 }
             });
         });

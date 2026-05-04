@@ -9,10 +9,17 @@ async function fetchPacks() {
     }
 }
 
+// Global variable to store all packs
+let allPacks = [];
+
 // Render Gallery
 function renderIndex(packs) {
     const sfwGrid = document.getElementById('sfw-grid');
     const nsfwGrid = document.getElementById('nsfw-grid');
+    
+    // Clear existing content
+    sfwGrid.innerHTML = '';
+    nsfwGrid.innerHTML = '';
     
     packs.forEach(pack => {
         const isNSFW = pack.type === 'nsfw';
@@ -27,6 +34,26 @@ function renderIndex(packs) {
             <div class="card-info">${pack.name}</div>
         `;
         (isNSFW ? nsfwGrid : sfwGrid).appendChild(card);
+    });
+}
+
+// Search functionality
+function filterPacks(query) {
+    if (!query) {
+        return allPacks;
+    }
+    const lowerQuery = query.toLowerCase();
+    return allPacks.filter(pack => 
+        pack.name.toLowerCase().includes(lowerQuery) || 
+        pack.id.toLowerCase().includes(lowerQuery)
+    );
+}
+
+function initSearch() {
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', (e) => {
+        const filteredPacks = filterPacks(e.target.value);
+        renderIndex(filteredPacks);
     });
 }
 
@@ -55,35 +82,37 @@ function renderPackDetails(packs, id) {
     container.innerHTML = `
         <div class="pack-split">
             <div class="dl-section">
-                <div>
-                    ${isNSFW ? '<span class="badge-tag" style="color:var(--nsfw)">Restricted Content</span>' : ''}
-                    <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.1;">${pack.name}</h1>
-                </div>
-
-                <div class="dl-card">
-                    <h3 style="margin-bottom: 1.5rem">Download Files</h3>
-                    ${isNSFW ? `
-                        <a href="${pack.patreon_link}" class="dl-btn patreon">Unlock via Patreon</a>
-                        <p style="font-size: 0.8rem; color: var(--text-dim); text-align: center;">This archive is preserved for Patreon supporters.</p>
-                    ` : `
-                        <a href="${pack.downloads.java_modern}" class="dl-btn">Java Edition (Modern)</a>
-                        <a href="${pack.downloads.java_legacy}" class="dl-btn">Java Edition (1.8)</a>
-                        <a href="${pack.downloads.bedrock}" class="dl-btn">Bedrock Edition</a>
-                    `}
-                </div>
-
-                <div class="install-guide">
-                    <h3 style="margin-bottom: 1.5rem">Installation</h3>
-                    <div class="step-item"><b>Step 01</b> Download the file matching your game version.</div>
-                    <div class="step-item"><b>Step 02</b> Place the .zip in your <i>resourcepacks</i> folder.</div>
-                    <div class="step-item"><b>Step 03</b> Enable the pack in your in-game settings.</div>
-                </div>
-            </div>
 
             <div class="preview-col">
                 <img src="${pack.images.main}" class="${isNSFW ? 'blur-nsfw' : ''}">
                 ${pack.images.inventory ? `<img src="${pack.images.inventory}" title="Inventory View">` : ''}
             </div>
         </div>
+                <div class="dl-card">
+                                <div>
+                    ${isNSFW ? '<span class="badge-tag" style="color:var(--nsfw); ">Restricted Content</span>' : ''}
+                    <h1 style="font-size: 3.5rem;text-align: center;margin-top: 0rem; margin-bottom: 2rem; font-weight: 800; line-height: 1.1; text-transform: uppercase;">${pack.name}</h1>
+                    
+                </div>
+                    <h3 style="margin-bottom: 1.5rem"><i class="fa-solid fa-download margin-icon"></i>Download Files</h3>
+                    ${isNSFW ? `
+                        <a href="${pack.patreon_link}" class="dl-btn patreon"><i class="fa-solid fa-unlock margin-icon"></i> Unlock via Patreon</a>
+                        <p style="font-size: 0.8rem; color: var(--text-dim); text-align: center; margin-bottom: 2rem;">This archive is preserved for Patreon supporters.</p>
+                    ` : `
+                        <a href="${pack.downloads.java_modern}" class="dl-btn"><i class="fa-solid fa-computer margin-icon"></i>Java Edition (Modern)</a>
+                        <a href="${pack.downloads.java_legacy}" class="dl-btn"><i class="fa-solid fa-laptop margin-icon"></i>Java Edition (1.8)</a>
+                        <a href="${pack.downloads.bedrock}" class="dl-btn"><i class="fa-solid fa-mobile-button margin-icon"></i>Bedrock Edition</a>
+                    `}
+                                    <div class="install-guide">
+                    <h3 style="margin-bottom: 1.5rem"><i class="fa-solid fa-circle-info margin-icon"></i>Installation</h3>
+                    <div class="step-item"><b>Step 01</b> Download the file matching your game version.</div>
+                    <div class="step-item"><b>Step 02</b> Place the .zip in your <i>resourcepacks</i> folder.</div>
+                    <div class="step-item"><b>Step 03</b> Enable the pack in your in-game settings.</div>
+                </div>
+                </div>
+
+            </div>
+
+
     `;
 }   
